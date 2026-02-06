@@ -2,7 +2,7 @@
 
 ## Overview
 
-![Linear Regression Model](linear-regression-model.png)
+![Linear Regression Model](linear_regression.png)
 *Scatter plot with data points and a linear regression line*
 
 **Linear Regression** is a fundamental supervised learning algorithm that predicts a continuous target variable by establishing a linear relationship between the target and one or more predictor variables. The algorithm models this relationship using a linear equation, where changes in the predictor variables result in proportional changes in the target variable.
@@ -71,7 +71,7 @@ y = b0 + b1*x1 + b2*x2 + ... + bn*xn
 
 ## Ordinary Least Squares (OLS)
 
-![Linear Regression with Residuals](linear-regression-residuals.png)
+![Linear Regression with Residuals](linear_regression.png)
 *Scatter plot with data points, a linear regression line, and residuals*
 
 **Ordinary Least Squares (OLS)** is a common method for estimating the optimal values for the coefficients in linear regression. It aims to minimize the sum of the squared differences between the actual values and the values predicted by the model.
