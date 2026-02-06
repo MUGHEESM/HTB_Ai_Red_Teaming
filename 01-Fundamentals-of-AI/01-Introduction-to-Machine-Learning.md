@@ -8,7 +8,7 @@ In computer science, the terms **Artificial Intelligence (AI)** and **Machine Le
 
 ## Artificial Intelligence (AI)
 
-> **Concept**: Think of AI as concentric circles - Artificial Intelligence encompasses Machine Learning, which encompasses Neural Networks, which encompasses Deep Learning.
+![AI, ML, Neural Networks, and Deep Learning Relationship](ai-ml-relationship.png)
 
 **Artificial Intelligence (AI)** is a broad field focused on developing intelligent systems capable of performing tasks that typically require human intelligence. These tasks include understanding natural language, recognizing objects, making decisions, solving problems, and learning from experience.
 
