@@ -71,7 +71,7 @@ y = b0 + b1*x1 + b2*x2 + ... + bn*xn
 
 ## Ordinary Least Squares (OLS)
 
-![Linear Regression with Residuals](linear_regression.png)
+![Linear Regression with Residuals](ols.png)
 *Scatter plot with data points, a linear regression line, and residuals*
 
 **Ordinary Least Squares (OLS)** is a common method for estimating the optimal values for the coefficients in linear regression. It aims to minimize the sum of the squared differences between the actual values and the values predicted by the model.
