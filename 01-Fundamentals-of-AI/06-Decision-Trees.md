@@ -201,7 +201,7 @@ All data points in a node belong to the same class, indicating that further spli
 
 ## Playing Tennis Example
 
-![Playing Tennis Decision Tree](playing_tennis.png)
+![Playing Tennis Decision Tree](decision_tree_tennis.png)
 *Decision tree diagram with nodes for Outlook, Temperature, Humidity, and Wind, classifying samples into Yes or No*
 
 Let's examine the "Playing Tennis" example more closely to illustrate how a decision tree works in practice.
