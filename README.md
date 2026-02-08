@@ -1,12 +1,12 @@
-# HTB AI Red Teaming Course
+# AI Red Teamer
 
-![AI Red Teaming](https://img.shields.io/badge/HTB-AI%20Red%20Teaming-green)
+![AI Red Teaming](https://img.shields.io/badge/AI-Red%20Teamer-green)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 ![Modules](https://img.shields.io/badge/Modules-12-blue)
 
 ## 📚 Course Overview
 
-This repository contains comprehensive study materials for the **HackTheBox AI Red Teaming Path** - a hands-on certification path covering the full spectrum of AI security, from fundamental concepts to advanced attack and defense techniques.
+This repository contains comprehensive study materials for the **AI Red Teamer Certification Path** - a hands-on certification path covering the full spectrum of AI security, from fundamental concepts to advanced attack and defense techniques.
 
 **Certification Exam:** Expected April 2026
 
@@ -195,7 +195,7 @@ By completing this course, you will:
 - Hands-on labs and practical exercises throughout the modules
 - This is a hands-on AI Red Teamer certification path
 - Skills assessments included to test practical knowledge
-- Part of HTB's professional certification program
+- Part of professional AI security certification program
 
 ## 🤝 Contributing
 
