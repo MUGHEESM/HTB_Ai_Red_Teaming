@@ -6,17 +6,9 @@ Their work, "Contributions to the Study of SMS Spam Filtering: New Collection an
 
 The resulting corpus contains 5,574 text messages annotated as either ham (legitimate) or spam (unwanted), making it a great resource for building and testing models that can differentiate meaningful communications from intrusive or deceptive ones. In this context, ham refers to messages from known contacts, subscriptions, or newsletters that hold value for the recipient, while spam represents unsolicited content that typically offers no benefit and may even pose risks to the user.
 
-**Dataset Location:** The SMS Spam Collection dataset is available in the [datasets/sms_spam_collection/](../../datasets/sms_spam_collection/) folder of this repository.
-
-**Direct Access:**
-- 📁 [SMS Spam Collection Dataset](../../datasets/sms_spam_collection/SMSSpamCollection)
-- 📄 [Dataset README](../../datasets/README.md)
-
 ## Downloading the Dataset
 
 The first step in our process is to download this dataset, and we'll do it programmatically in our notebook.
-
-**Note:** If you cloned this repository, the dataset is already available locally at [../../datasets/sms_spam_collection/SMSSpamCollection](../../datasets/sms_spam_collection/SMSSpamCollection). You can skip the download step and load it directly.
 
 ```python
 import requests
