@@ -6,9 +6,13 @@ Their work, "Contributions to the Study of SMS Spam Filtering: New Collection an
 
 The resulting corpus contains 5,574 text messages annotated as either ham (legitimate) or spam (unwanted), making it a great resource for building and testing models that can differentiate meaningful communications from intrusive or deceptive ones. In this context, ham refers to messages from known contacts, subscriptions, or newsletters that hold value for the recipient, while spam represents unsolicited content that typically offers no benefit and may even pose risks to the user.
 
+**Dataset Location:** The SMS Spam Collection dataset is available in the `datasets/sms_spam_collection/` folder of this repository.
+
 ## Downloading the Dataset
 
 The first step in our process is to download this dataset, and we'll do it programmatically in our notebook.
+
+**Note:** If you cloned this repository, the dataset is already available locally at `../../datasets/sms_spam_collection/SMSSpamCollection`. You can skip the download step and load it directly.
 
 ```python
 import requests
@@ -57,13 +61,22 @@ With the dataset extracted, we can now load it into a pandas DataFrame for furth
 ```python
 import pandas as pd
 
-# Load the dataset
+# Load the dataset from the repository
+# If running from the module folder, use the relative path:
 df = pd.read_csv(
-    "sms_spam_collection/SMSSpamCollection",
+    "../../datasets/sms_spam_collection/SMSSpamCollection",
     sep="\t",
     header=None,
     names=["label", "message"],
 )
+
+# Alternative: If you downloaded it to a local folder:
+# df = pd.read_csv(
+#     "sms_spam_collection/SMSSpamCollection",
+#     sep="\t",
+#     header=None,
+#     names=["label", "message"],
+# )
 ```
 
 Here, we specify that the file is tab-separated (sep="\t"), and since the file does not contain a header row, we set header=None and provide column names manually using the names parameter.
