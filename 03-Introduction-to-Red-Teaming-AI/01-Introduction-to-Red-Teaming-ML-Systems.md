@@ -1,35 +1,21 @@
 # Introduction to Red Teaming ML-based Systems
 
-Red teaming ML-based systems is complex and requires understanding of their many components and algorithms. This module lays the groundwork for assessing the security of ML-based systems.
+To assess the security of ML-based systems, it is essential to have a deep understanding of the underlying components and algorithms. Due to the significant complexity of these systems, there is much room for security issues to arise. Before discussing and demonstrating techniques we can leverage when assessing the security of ML-based systems, it is essential to establish a solid foundation for security assessments of ML-based systems. These systems encompass different interconnected components. In the remainder of this module, we will explore a broad overview of security risks and attack vectors in each of them.
 
 ## What is Red Teaming?
 
-A **penetration test** is a focused, time-bound security assessment in which skilled professionals follow a structured methodology to identify vulnerabilities. Penetration testing is done within a specific scope. For example, a web application penetration test involves actively discovering and testing whether vulnerabilities exist in a web app.
+Traditionally, when discussing security assessments of IT systems, the most common type of assessment is a Penetration Test. This type of assessment is typically a focused and time-bound exercise designed to identify and exploit vulnerabilities in specific systems, applications, or network environments. Penetration testers follow a structured process, often using automated tools and manual testing techniques to identify security weaknesses within a defined scope. A penetration test aims to determine if vulnerabilities exist, whether they can be exploited, and to what extent they can be exploited. It is often carried out in isolated network segments or web application instances to avoid interference with regular users.
 
-Red teaming, on the other hand, is a step beyond penetration testing. In fact, there are three kinds of security assessments:
+Commonly, there are two additional types of security assessment: Red Team Assessments and Vulnerability Assessments.
 
-- Red Team
-- Penetration Testing
-- Vulnerability Assessment
+![Pyramid diagram showing Red Teaming, Penetration Testing, and Vulnerability Assessment](./images/diagram_7.png)
 
-The following diagram displays these hierarchically in the form of a pyramid. At the very bottom of the pyramid, is a **Vulnerability Assessment**, where a brief description of it is included. At the middle of the pyramid is **Penetration Testing**, where again, a brief description of it is included. Finally, at the top of the pyramid is a **Red Team Assessment**, where, again, a brief description of it is included.
+Vulnerability assessments are generally more automated assessments that focus on identifying, cataloging, and prioritizing known vulnerabilities within an organization's infrastructure. These assessments typically do not involve exploitation, but instead focus on identifying security vulnerabilities. They provide a comprehensive scan of systems, applications, and networks to identify potential security gaps that could be exploited. These scans are often the result of automated scans using vulnerability scanners such as Nessus or OpenVAS. Check out the Vulnerability Assessment module for more details.
 
-**Vulnerability Assessment**
+The third type of assessment, and the one we will focus on throughout this module, is a Red Team Assessment. This describes an advanced, adversarial simulation where security experts, often referred to as the red team, mimic real-world attackers' tactics, techniques, and procedures (TTPs) to test an organization's defenses. The red team's goal is to exploit technical vulnerabilities and challenge every aspect of security, including personnel and processes, by employing social engineering, phishing, and physical intrusion techniques. Red team assessments focus on stealth and persistence, working to evade detection by the defensive blue team while seeking ways to achieve specific objectives, such as accessing sensitive data or critical systems. This exercise often spans weeks to months, providing an in-depth analysis of an organization's overall resilience against sophisticated threats.
 
-A vulnerability assessment is an automated or manual process designed to identify and catalog potential weaknesses in a system, application, or network. It primarily focuses on discovery and prioritization without actively exploiting the findings. Tools like Nessus or OpenVAS are commonly used.
-
-For more information about vulnerability assessments, see the Vulnerability Assessment module on HTB Academy.
-
-**Red Team Assessment**
-
-A red team assessment is an advanced adversarial simulation that mimics real-world attackers. Rather than following a predefined checklist or scope, a red team operates with flexibility to employ Tactics, Techniques, and Procedures (TTPs) similar to those used by actual threat actors. This includes not only technical attacks but also social engineering, phishing campaigns, and even physical intrusion (depending on the engagement scope).
-
-Stealth and persistence are emphasized. Red teams try to remain undetected while exploring how far they can go. Their goal is to identify gaps in defensive coverage, test the effectiveness of the blue team, and reveal weaknesses in detection and response capabilities. A red team engagement can take weeks or even months, operating in a manner that reflects the behavior of advanced adversaries.
-
-For more information about red team assessments, see the Introduction to Information Security module on HTB Academy.
+For more details, check out the Introduction to Information Security module.
 
 ## Red Teaming ML-based Systems
 
-ML-based systems can carry unique vulnerabilities. They often rely on large datasets, make decisions based on statistical inference, and are built using complex architectures. Red teaming is often preferred over penetration testing for these systems.
-
-One of the main reasons for choosing red teaming over penetration testing in an ML context is time. Some attack techniques are advanced and take longer to complete. Moreover, the interconnected nature of ML components, such as data pipelines, model APIs, and training environments, means that a thorough assessment may benefit from broader exploration. This can be challenging to scope in a conventional penetration test.
+Unlike traditional systems, ML-based systems face unique vulnerabilities because they rely on large data sets, statistical inference, and complex model architectures. Thus, red team assessments are often the preferred method for evaluating the security of ML-based systems, as many advanced attack techniques require more time than a typical penetration test would allow. Furthermore, ML-based systems are comprised of various components that interact with each other. Often, security vulnerabilities arise at these interaction points. As such, including all these components in the security assessment is beneficial. Determining the scope of a penetration test for an ML-based system can be difficult. It may inadvertently exclude specific components or interaction points, potentially rendering particular security vulnerabilities undetectable.
