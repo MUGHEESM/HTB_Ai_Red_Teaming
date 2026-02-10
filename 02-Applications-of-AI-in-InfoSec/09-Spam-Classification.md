@@ -107,4 +107,4 @@ P(Not Spam|F1, F2) = (P(F1, F2|Not Spam) * P(Not Spam)) / P(F1, F2)
                    ≈ 0.412
 ```
 
-Since P(Spam|F1, F2) > P(Not Spam|F1, F2), the email is classified as spam.
+Since P(Spam|F1, F2) > P(Not Spam|F1, F2), the email is classified as spam.
