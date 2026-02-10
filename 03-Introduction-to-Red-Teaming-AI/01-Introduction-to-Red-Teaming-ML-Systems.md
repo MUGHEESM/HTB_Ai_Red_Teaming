@@ -8,7 +8,7 @@ Traditionally, when discussing security assessments of IT systems, the most comm
 
 Commonly, there are two additional types of security assessment: Red Team Assessments and Vulnerability Assessments.
 
-![Pyramid diagram showing Red Teaming, Penetration Testing, and Vulnerability Assessment](./diagram_7.png)
+![Pyramid diagram showing Red Teaming, Penetration Testing, and Vulnerability Assessment](./images/diagram_7.png)
 
 Vulnerability assessments are generally more automated assessments that focus on identifying, cataloging, and prioritizing known vulnerabilities within an organization's infrastructure. These assessments typically do not involve exploitation, but instead focus on identifying security vulnerabilities. They provide a comprehensive scan of systems, applications, and networks to identify potential security gaps that could be exploited. These scans are often the result of automated scans using vulnerability scanners such as Nessus or OpenVAS. Check out the Vulnerability Assessment module for more details.
 
