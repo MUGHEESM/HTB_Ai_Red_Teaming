@@ -23,7 +23,7 @@ As the name suggests, input manipulation attacks comprise any type of attack aga
 
 Many real-world input manipulation attack vectors involve applying small perturbations to benign input data, resulting in unexpected behavior from the ML model. In contrast, the perturbations are so small that the input looks benign to the human eye. For instance, consider a self-driving car that utilizes an ML-based system for image classification of road signs to detect the current speed limit, stop signs, and other relevant information. In an input manipulation attack, an attacker could add small perturbations, such as particularly placed dirt specks, small stickers, or graffiti, to road signs. While these perturbations appear harmless to the human eye, they could lead to the misclassification of the sign by the ML-based system. This can have deadly consequences for passengers of the vehicle. For more details on this attack vector, check out [this](Research_Papers_reading/ML01_Robust%20Physical-World%20Attacks%20on%20Deep%20Learning%20Visual%20Classification.pdf) and [this](Research_Papers_reading/ML01_1_Adversarial%20Attacks%20on%20Traffic%20Sign%20Recognition.pdf) paper.
 
-![Input Manipulation Attack Diagram](images/diagram_7.png)
+![Input Manipulation Attack Diagram](images/input_manipulation_attack_ML01.png)
 
 ## Data Poisoning Attack (ML02)
 
@@ -45,7 +45,7 @@ Membership inference attacks aim to determine whether a specific data sample was
 
 An extensive assessment of the performance of membership inference attacks on language models is performed in [this paper](Research_Papers_reading/ML_04_Do%20Membership%20Inference%20Attacks%20Work%20on%20Large%20Language.pdf).
 
-*Diagram showing Synthetic Data and Source Data used by a Generative Model, leading to an Inference Model. Adversary exploits this, risking patient data disclosure.*
+![Membership Inference Attack Diagram](images/ML04_Membership_inference_attack.png)
 
 ## Model Theft (ML05)
 
@@ -55,7 +55,7 @@ Model theft threatens the intellectual property of organizations investing in pr
 
 For more details on the effectiveness of model theft attacks on a specific type of neural network, check out [this paper](Research_Papers_reading/ML_05_A%20Model%20Stealing%20Attack%20Against%20Multi-Exit%20Networks.pdf).
 
-*Diagram showing an attacker using a theft data set to train a stolen model via queries to an MLaaS platform.*
+![Model Theft Diagram](images/ML05_Model_Theft.png)
 
 ## AI Supply Chain Attacks (ML06)
 
