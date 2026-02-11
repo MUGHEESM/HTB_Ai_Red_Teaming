@@ -1,10 +1,5 @@
 # Module Overview: Introduction to Red Teaming AI
 
-**Tier:** I  
-**Difficulty:** Medium  
-**Category:** Offensive  
-**Estimated Time:** 4 hours
-
 This module provides a comprehensive introduction to the world of red teaming Artificial Intelligence (AI) and systems utilizing Machine Learning (ML) deployments. It covers an overview of common security vulnerabilities in these systems and the types of attacks that can be launched against their components.
 
 ## Module Summary
